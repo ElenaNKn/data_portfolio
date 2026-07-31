@@ -24,6 +24,98 @@
     </script>
     <!-- End Google Tag Manager -->
 
+    <!-- Cookie Consent by Orest Bida -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent-v3@3.0.0/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent-v3@3.0.0/dist/cookieconsent.umd.js" defer></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        CookieConsent.run({
+            cookie: {
+                name: 'cc_cookie',
+                expiryDays: 365
+            },
+            guiOptions: {
+                consentModal: {
+                    layout: 'cloud',
+                    position: 'bottom center',
+                    transition: 'slide'
+                }
+            },
+            categories: {
+                necessary: {
+                    readOnly: true
+                },
+                analytics: {
+                    enabled: false,
+                    readOnly: false
+                }
+            },
+            language: {
+                default: 'en',
+                translations: {
+                    en: {
+                        consentModal: {
+                            title: 'We use cookies',
+                            description: 'This website uses cookies to improve your experience. We use analytics cookies to understand how visitors interact with our site.',
+                            acceptAllBtn: 'Accept all',
+                            acceptNecessaryBtn: 'Reject all',
+                            showPreferencesBtn: 'Manage preferences'
+                        },
+                        preferencesModal: {
+                            title: 'Cookie preferences',
+                            acceptAllBtn: 'Accept all',
+                            acceptNecessaryBtn: 'Reject all',
+                            savePreferencesBtn: 'Save preferences',
+                            closeIconLabel: 'Close',
+                            sections: [
+                                {
+                                    title: 'Necessary cookies',
+                                    description: 'These cookies are essential for the website to function properly.',
+                                    linkedCategory: 'necessary'
+                                },
+                                {
+                                    title: 'Analytics cookies',
+                                    description: 'We use Google Analytics to understand how visitors interact with our website, helping us improve content and user experience.',
+                                    linkedCategory: 'analytics'
+                                }
+                            ]
+                        }
+                    },
+                    ru: {
+                        consentModal: {
+                            title: 'Мы используем cookies',
+                            description: 'Этот сайт использует файлы cookie для улучшения вашего опыта. Мы используем аналитические cookie для понимания того, как посетители взаимодействуют с нашим сайтом.',
+                            acceptAllBtn: 'Принять все',
+                            acceptNecessaryBtn: 'Отклонить все',
+                            showPreferencesBtn: 'Настроить'
+                        },
+                        preferencesModal: {
+                            title: 'Настройки cookie',
+                            acceptAllBtn: 'Принять все',
+                            acceptNecessaryBtn: 'Отклонить все',
+                            savePreferencesBtn: 'Сохранить настройки',
+                            closeIconLabel: 'Закрыть',
+                            sections: [
+                                {
+                                    title: 'Необходимые cookie',
+                                    description: 'Эти файлы cookie необходимы для корректной работы сайта.',
+                                    linkedCategory: 'necessary'
+                                },
+                                {
+                                    title: 'Аналитические cookie',
+                                    description: 'Мы используем Google Analytics для анализа взаимодействия посетителей с сайтом, чтобы улучшать контент и пользовательский опыт.',
+                                    linkedCategory: 'analytics'
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        });
+    });
+    </script>
+    <!-- End Cookie Consent -->
+
 </head>
 <body>
 
